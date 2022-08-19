@@ -37,5 +37,16 @@ return [
     'text_view_student' => 'Voir',
     'text_title_modifier_student' => 'Modifier l étudiant',
     
-    
+    //dashboard
+    'text_students' => 'Etudiants',
+    'text_logout' => 'Deconnecter',
+    'text_upload' => 'Televerser',
+    'text_dash_blog' => 'Blog',
+    'text_show_files' => 'Montrer les Archives',
+
+    //upload file
+    'text_upload_file' => 'Televerser archive',
+    'text_new_file' => 'Nouveau archive',
+    'text_file' => 'Archive',
+    'text_download' => 'Telecharger',
 ];

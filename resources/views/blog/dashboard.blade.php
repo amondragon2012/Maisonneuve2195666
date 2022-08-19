@@ -11,12 +11,14 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 @guest
-                <a class="nav-link" href="{{route('login')}}">Login</a>
-                <a class="nav-link" href="{{route('registration')}}">Registration</a>
+                <a class="nav-link" href="{{route('login')}}">@lang('lang.text_login')</a>
+                <a class="nav-link" href="{{route('registration')}}">@lang('lang.text_registration')</a>
                 @else
                 <a class="nav-link" href="{{route('blog')}}">Blog</a>
-                <a class="nav-link" href="{{route('etudiant')}}">Etudiants</a>
-                <a class="nav-link" href="{{route('logout')}}">Logout</a>
+                <a class="nav-link" href="{{route('etudiant')}}">@lang('lang.text_students')</a>
+                <a class="nav-link" href="{{route('upload')}}">@lang('lang.text_upload')</a>
+                <a class="nav-link" href="{{route('show')}}">@lang('lang.text_show_files')</a>
+                <a class="nav-link" href="{{route('logout')}}">@lang('lang.text_logout')</a>
                 @endguest
                 <a class="nav-link" href="{{route('lang', 'fr')}}">FR</a>
                 <a class="nav-link" href="{{route('lang', 'en')}}">EN</a>

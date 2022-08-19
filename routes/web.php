@@ -5,6 +5,7 @@ use App\Http\Controllers\EtudiantController;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\BlogPostController;
 use App\Http\Controllers\LocalisationController;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +28,12 @@ Route::get('/cadriciel20632/maisonneuve2195666/blog', function () {
 
 Route::get('lang/{locale}', [LocalisationController::class, 'index'])->name('lang');
 
-Route::get('etudiant', [EtudiantController::class, 'index'])->name('etudiant')->middleware('auth');;
+Route::get('uploadpage', [PageController::class, 'uploadpage'])->name('upload')->middleware('auth');;
+Route::post('uploadpage', [PageController::class, 'store'])->name('uploadproduct')->middleware('auth');;
+Route::get('showfiles', [PageController::class, 'show'])->name('show')->middleware('auth');;
+Route::get('download/{file}', [PageController::class, 'download'])->name('download')->middleware('auth');;
+
+Route::get('etudiant', [EtudiantController::class, 'index'])->name('etudiant')->middleware('auth');
 Route::get('etudiant/{etudiant}', [EtudiantController::class, 'show'])->name('etudiant.show')->middleware('auth');;
 Route::get('etudiant-create', [EtudiantController::class, 'create'])->name('etudiant.create')->middleware('auth');;
 Route::post('etudiant-create', [EtudiantController::class, 'store'])->name('etudiant.create.post')->middleware('auth');;

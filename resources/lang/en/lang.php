@@ -37,5 +37,19 @@ return [
     'text_view_student' => 'View',
     'text_title_modifier_student' => 'Modify the student',
     
-    
+    //dashboard
+    'text_students' => 'Students',
+    'text_logout' => 'Logout',
+    'text_upload' => 'Upload',
+    'text_dash_blog' => 'Blog',
+    'text_show_files' => 'Show Files',
+
+    //upload file
+    'text_upload_file' => 'Upload File',
+    'text_new_file' => 'New File',
+    'text_file' => 'File',
+    'text_download' => 'Download',
+
+
+
 ];
